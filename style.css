@@ -1,123 +1,130 @@
 *{
-	margin: 0;
-	padding: 0;
-	line-height: 100%;
-	text-decoration: none;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-	background-color: silver;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: silver;
 }
 
 #container {
-	margin: auto;
-	max-width: 960px;
+  margin: auto;
+  max-width: 960px;
 }
 
 header{
-	padding: 4rem;
-	background-color: #333;
-	color: white;
+  padding: 3rem;
+  background-color: #333;
+  color: white;
 }
 
 header h1{
-	text-align: center;
+  text-align: center;
 }
 
 #button {
-	display: none;
+  width: 100%;
+  padding: 6px 0;
+  background: gray;
+  text-align: center;
+}
+#button a {
+  color:#FFF;
+}
+#button img {
+  width: 32px;
 }
 
 #menu {
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-	#menu li{
-		float: left;
-		width: 25%;
-	}
-
-	#menu li a {
-		display: block;
-		padding: 12px 0 12px 0;
-		color: #FFF;
-		text-align: center;
-		border-right:1px solid silver;
-		background-color: #666;
-	}
-
-	#menu li:last-child a{
-		border: none;
-	}
-
-	#menu li a:hover{
-		background: black;
-	}
-
-article{
-	clear: both;
-	padding: 40px;
-	background-color: white;
+#menu li {
+  width: 100%;
+  border-top: 1px solid gray;
+  list-style-type: none;
+  font-size: 80%;
 }
 
-	article p{
-		line-height: 180%;
-	}
-
-footer{
-	height: 40px;
-	padding: 40px;
-	text-align: center;
-	background-color: #333;
-	color:white;
+#menu li a {
+    display: block;
+    padding: 12px 0 12px 0;
+    color: #FFF;
+    text-align: center;
+    border-right:1px solid gray;
+    background-color: #666;
 }
 
+#menu li:last-child a {
+  border: none;
+}
 
-@media only screen and (max-width: 768px) {
+#menu li a:hover {
+  background: black;
+}
 
-	#menu li {
-		width: 50%;
-		border-bottom: 1px solid silver;
-	}
+main {
 
 }
 
-@media only screen and (max-width: 480px) {
+article,
+aside {
+  padding: 2rem;
+  text-align: justify;
+  font-size: 0.85rem;
+  background-color: white;
+}
 
-	article{
-		font-size: 80%;
-	}
+aside {
+  background-color: #EEE;
+}
 
-	header h1{
-		font-size: 18px;
-	}
+footer {
+  height: 40px;
+  padding: 40px;
+  text-align: center;
+  background-color: #333;
+  color:white;
+}
 
-	#button{
-		display: block;
-		width: 100%;
-		background: gray;
-	}
 
-	#button a{
-		display: block;
-		padding: 6px 0;
-		border-bottom: 1px solid silver;
-		color:#FFF;
-		text-align: center;
-	}
-	#button img{
-		width: 32px;
-	}
+@media only screen and (min-width: 481px) {
 
-	#menu{
-		display: none;
-	}
+  #button {
+    display: none;
+  }
 
-	#menu li {
-		width: 100%;
-		border-bottom: 1px solid silver;
-		font-size: 80%;
-	}
+  #menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #menu li {
+    width: 50%;
+  }
+
+  article,
+  aside {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+  #menu {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #menu li {
+    flex:1;
+  }
+
+
+
 
 }

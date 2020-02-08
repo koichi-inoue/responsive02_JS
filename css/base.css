@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
   max-width: 960px;
 }
 
-header{
+header {
   position: relative;
   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
   background-color: #333;
@@ -45,6 +44,7 @@ header{
 #lists li a {
   display: block;
   padding: 1rem 0;
+  text-decoration: none;
   text-align: center;
   color: #FFF;
 }

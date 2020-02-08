@@ -1,0 +1,44 @@
+/*-------------------------------
+          mobile.css
+--------------------------------*/
+
+header{
+  height: 5rem;
+}
+header h1{
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 1.2rem;
+}
+
+#button {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+#button a {
+  color:#FFF;
+}
+#button img {
+  cursor: pointer;
+  width: 1.8rem;
+}
+
+#lists {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+#lists li {
+  width: 100%;
+  border-bottom: 1px solid #777;
+}
+#lists li:last-child {
+  border-bottom: none;
+}
+
+article, aside {
+  padding: 2rem;
+  font-size: 0.85rem;
+}
